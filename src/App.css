@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+body {
+  background-color: #252325;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #549991;
+  font-family: 'IBM Plex Sans', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 50px;
+}
+.container {
+  background-color: #333133;
+  width: 700px;
+  margin: 0 auto;
+  min-height: 300px;
+}
+.inputtogether {
+  margin-top: 20px;
+  border: 2px solid grey;
+  width: 430px;
+  margin: 0 auto;
+}
+input {
+  background-color: #333133;
+  padding: 18px;
+  width: 300px;
+  color: rgb(185, 183, 183);
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+input:hover {
+  color: rgb(185, 183, 183);
+}
+.addButton {
+  background-color: #333133;
+  padding: 20px;
+  width: 100px;
+  color: #549991;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+  border-left: 2px solid gray;
+}
+.delButton {
+  width: 100px;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 330px;
+  background-color: #484745;
+  border: none;
+  color: rgb(255, 115, 0);
+  letter-spacing: 1px;
+}
+.delButton:hover {
+  cursor: pointer;
+  color: rgb(250, 55, 7);
+}
+.addButton:hover {
+  color: #3ef3de;
+}
+li {
+    margin-top: 20px;
+    max-width: 430px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0 auto;
+    list-style: none;
+    margin-left: 93px;
+    font-size: 20px;
+    color: gray;
+    margin-top: 5px;
+    background-color: #484745;
+    border: none;
+    text-indent: 20px; 
+    color: rgb(185, 183, 183);
+    
 }
 
-.App-link {
-  color: #61dafb;
+
+@media all and (max-width: 800px) {
+  .container {
+    max-width: 90%;
+  }
+  .inputtogether {
+    max-width: 90%;
+  }
+  input {
+    max-width: 170px;
+  }
+  .addButton {
+    max-width: 10px;
+    font-size: 15px;
+  }
+  li {
+    margin-left: -24px;
+    margin-right: 16px;
+  }
+  .delButton {
+    margin-left: 190px;
+    font-size: 15px;
+  }
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
